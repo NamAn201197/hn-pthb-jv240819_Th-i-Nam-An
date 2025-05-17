@@ -29,7 +29,7 @@ public class CourseController {
     @GetMapping("/findAll")
     public String findAllCourse(Model model) {
         model.addAttribute("listCourses", courseService.findAll());
-        return "course";
+        return "course/list";
     }
 
     @GetMapping("initCreate")
